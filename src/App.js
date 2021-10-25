@@ -41,6 +41,7 @@ function App() {
       {expenses.map((data) => {
         return (
           <ExpenseItem
+            key={data.id}
             title={data.title}
             amount={data.amount}
             date={data.date}
