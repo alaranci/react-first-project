@@ -1,4 +1,4 @@
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 function App() {
   const expenses = [
@@ -37,17 +37,7 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <p>ini adalah react pertama arayra</p>
-      {expenses.map((data) => {
-        return (
-          <ExpenseItem
-            key={data.id}
-            title={data.title}
-            amount={data.amount}
-            date={data.date}
-          />
-        );
-      })}
+      <Expenses items={expenses} />{" "}
     </div>
   );
 }
